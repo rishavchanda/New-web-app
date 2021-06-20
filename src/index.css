@@ -163,7 +163,7 @@ color: #212121;
 }
 .toggle-button-r{
     background: #EBF2F7;
-    padding: 14px;
+    padding: 14.5px;
     padding-left: 35px;
     padding-right: 35px;
     border-left: 10px !important;
@@ -173,9 +173,13 @@ color: #212121;
 .active{
     background: #A3FFD3;
 }
+.active img{
+    color: #B9B9B9 !important;
+}
 
 .heading-t{
     font-weight: bold;
+    font-style: normal;
 }
 
 /*Feedback*/
@@ -188,13 +192,20 @@ color: #212121;
     border-radius: 8px !important;
     box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
 }
+.feedbacktbn{
+    margin-top: 35px !important;
+    margin-bottom: 15px;
+}
 .feedback-btn{
-    margin-top: 20px !important;
     background: #94ffcb !important;
-    padding: 15px !important;
+    padding: 20px !important;
+    padding-right: 50px !important;
+    padding-left: 50px !important;
     border: none !important;
     border-radius: 10px !important;
-    color: #272727 !important;
+    color: #272727 !important; 
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .toggle-active{

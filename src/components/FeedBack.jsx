@@ -8,11 +8,12 @@ const FeedBack = () => {
             <div className="feedback-card">
                 <div>
                     <h3 className="heading-t">Have a Feedback?</h3>
-                    <NavLink style={{textDecoration: "none"}} activeClassName="toggle-active"to="/form"exact>
-                        <div className="feedback-btn">
-                            <h5 className="heading-t mt-1">We're Listening!</h5>
-                        </div>
+                    <div className="feedbacktbn">
+                    <NavLink  className="feedback-btn" activeClassName="toggle-active"to="/form"exact>
+                        We're Listening!
                     </NavLink>
+                    </div>
+                   
 
                 </div>
             </div>
