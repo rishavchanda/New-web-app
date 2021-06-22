@@ -8,7 +8,6 @@ const Horizontal = () => {
       const getArticles = async () => {
         const res = await axios.get(`https://corona.lmao.ninja/v2/countries`);
         setNews(res.data);
-        console.log(res.data.cases)
       };
       getArticles();
     }, [])

@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom";
 import {
     Card, Button, CardImg, CardTitle, CardText, CardBody
 } from 'reactstrap';
@@ -6,7 +7,7 @@ import {
 const VerticalCard = (props) => {
     return (
         <>
-            <Card className=" mb-2 card-ver">
+            <NavLink activeClassName="menu_active_" exact aria-current="page" to={`/details/${props.Country}`} className=" mb-2 card-ver">
 
                 <CardBody>
                     <CardTitle tag="h5" className="country">{props.Country} :</CardTitle>
@@ -19,7 +20,7 @@ const VerticalCard = (props) => {
                    
                     <CardImg className="card-Img" top width="100%" src={props.img} />
                 </CardBody>
-            </Card>
+            </NavLink>
         </>
     );
 };

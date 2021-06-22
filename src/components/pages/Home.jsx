@@ -1,6 +1,7 @@
 import React from "react"
 import { Redirect, Route, Switch } from 'react-router-dom';
 import Horizontal from "./Horizontal"
+import Details from "../pages/Details"
 import Navigation from "../Navigation"
 const Home = () => {
     return (
@@ -13,7 +14,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                   <Horizontal/>
+                    <Switch>
+                    <Route exact path="/" component={Horizontal} />
+                    <Route exact path="/details/:country" component={Details} />
+                    </Switch>
                    </div>
                 </div>
             </div>
